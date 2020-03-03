@@ -8,15 +8,27 @@
   <script src="script/lib/LAB.min.js"></script>
   <script>
     $LAB
-        .script("script/Game.js").wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
-        .script().wait()
+        .script('script/Keys.js').wait()
+        .script('script/Color.js').wait()
+        .script('script/Vector2.js').wait()
+        .script('script/input/ButtonState.js').wait()
+        .script('script/input/Keyboard.js').wait()
+        .script('script/input/Mouse.js').wait()
+        .script('script/Canvas2D.js').wait()
+        .script('script/Score.js').wait()
+        .script('script/Ball.js').wait()
+        .script('script/Stick.js').wait()
+        .script('script/Label.js').wait()
+        .script('script/Button.js').wait()
+        .script('script/Menu.js').wait()
+        .script('script/MainMenu.js').wait()
+        .script('script/Opponent.js').wait()
+        .script('script/AIPolicy.js').wait()
+        .script('script/AITrainer.js').wait()
+        .script('script/Player.js').wait()
+        .script('script/GamePolicy.js').wait()
+        .script('script/GameWorld.js').wait()
+        .script('script/Game.js').wait()
         .script("script/Assets.js").wait(function () {
             Game.start('gameArea', 'screen', 1500, 825);
         });
